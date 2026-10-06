@@ -18,9 +18,9 @@ Offline licenses signed with **Ed25519** and bound to each machine, local token 
 After a signing-key leak, I rotated the key, rejected the old license format and added a build check that blocks any private key from shipping.
 *Private repository (client code).*
 
-**Turismo San Juan** · `Java 21` `Spring Boot` `Spring Security` `JPA` `JavaScript`
+**[Turismo San Juan](https://github.com/jpechegaray/turismo-san-juan)** · `Java 21` `Spring Boot` `Spring Security` `JPA` `JavaScript`
 Tourism platform with a REST API, session-based authentication, BCrypt and role-based access control for admins, providers and tourists, plus a provider approval and moderation workflow.
-*Repository and security review coming soon.*
+Hardened after a [security review of my own code](https://github.com/jpechegaray/turismo-san-juan/blob/main/SECURITY_REVIEW.md): CSRF, insecure default profile, session fixation, brute force and more — all fixed and covered by tests in CI.
 
 **Multi-tenant SaaS for fitness coaches** · `Next.js` `Spring Boot` `PostgreSQL` · *real client, in development*
 Architecture with three layers of tenant isolation (service-level authorization, tenant-scoped queries and PostgreSQL Row Level Security), JWT validated against JWKS and signed URLs for private files.
