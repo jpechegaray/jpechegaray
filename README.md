@@ -13,7 +13,7 @@ Right now I'm going deeper into application security: secure code review, web vu
 ### What I've built
 
 **Barbershop management system** · `Python` `PySide6` `SQLite` · *real client, in production (v1.2.1)*
-Commercial desktop app that replaced a business's spreadsheets: shifts, cash register by payment method, commissions, reports and statistics.
+Desktop app, built pro bono in one month, that replaced a business's spreadsheets: shifts, cash register by payment method, commissions, reports and statistics.
 Offline licenses signed with **Ed25519** and bound to each machine, local token protected with **DPAPI**, **PBKDF2** password hashing and account lockout.
 After a signing-key leak, I rotated the key, rejected the old license format and added a build check that blocks any private key from shipping.
 *Private repository (client code).*
